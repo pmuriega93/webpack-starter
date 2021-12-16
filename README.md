@@ -4,7 +4,7 @@
 Recordar reconstruir los módulos de Node
 
 ````
-```npm install```
+npm install
 ````
 
 y para construir el build
