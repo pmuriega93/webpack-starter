@@ -1,6 +1,16 @@
-import { saludar } from './js/componentes';
 import './styles.css';
+import { Todo, TodoList } from './classes';
+import { crearTodoHtml } from './js/componentes';
 
-const nombre = 'Fernando';
+export const todoList = new TodoList();
 
-saludar( nombre );
+todoList.todos.forEach( todo => crearTodoHtml( todo ) );
+
+
+
+// localStorage.setItem('mi-llave', 'ABC1234');
+// sessionStorage.setItem('mi-llave', 'ABC1234');
+
+// setTimeout(() => {
+//     localStorage.removeItem('mi-llave');
+// }, 1500);
